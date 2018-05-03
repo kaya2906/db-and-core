@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>TSU core page</h1>
+
+
+
+<form method="POST" action="/contact">
+
+<select name="course_subject_id">
+ <% for(var i = 0; i < data.length; i++){ %>
+<option value="<%= data[i].course_subject_id %>" >
+  <%= data[i].course_subject_description %>
+</option>
+  <% } %>
+</select>  
+
+
+<button>Search</button>
+</form>  
+  
+
+
+
+
+</body> 
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.js"></script>
+  <link rel="stylesheet" href="style2.css">
+  <title>TEST</title>
+</head>
+<body>
+  
+<h3>Test Page</h3>
+
+<select class="ui search dropdown">
+    <option value="">Component</option>
+<%for (var i = 0; i < componentId.length; i++){ %>
+<option>
+<%= componentName[i].component_name%>
+<% } %>
+</option>
+</select>
+
+<label for="hours">Total Credit Hours</label>
+<input type="text" id="hours">
+
+<div>
+  Courses:
+  <select class="ui search dropdown">
+    <option value="">Subject</option>
+  </select>
+
+  <select class="ui search dropdown">
+  
+      <option value="">Courses
+      
+      </option>
+    </select>
+
+    <select class="ui search">
+        <option value="">AND</option>
+        <option value="">OR</option>
+      </select>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
